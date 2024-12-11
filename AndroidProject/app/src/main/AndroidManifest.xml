@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidproject">
+
+    <!-- Permissions for Camera and Storage -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidProject">
+
+        <!-- Mapbox Access Token -->
+        <meta-data
+            android:name="com.mapbox.AccessToken"
+            android:value="pk.eyJ1IjoicmFvd25va2FoYW1lZCIsImEiOiJjbTRqcnhxeGEwZGZhMmtzOTlnenZxdHVwIn0.r1eXvFIO6TxXKnftnpILlg" />
+
+        <!-- CameraX permissions -->
+        <uses-feature android:name="android.hardware.camera" android:required="true"
+            tools:ignore="WrongManifestParent" />
+        <uses-feature android:name="android.hardware.camera.autofocus"
+            tools:ignore="WrongManifestParent" />
+
+    </application>
+
+</manifest>
